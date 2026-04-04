@@ -1,4 +1,4 @@
-import psycopg2
+import psycopg2-binary
 from flask import Flask
 app = Flask(__name__)
 
@@ -10,4 +10,4 @@ def hello_world():
 def testing():
     conn = psycopg2.connect("postgresql://yang_ou_postgres_user:Lmfaixi91SgYxM5XesWl5lEz91RJ2mNx@dpg-d78okfia214c73acrhgg-a/yang_ou_postgres")
     conn.close()
-    return "Database Connection Successful."
+    return 'Database Connection Successful.'
