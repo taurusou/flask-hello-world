@@ -34,13 +34,13 @@ def inserting():
     conn = psycopg2.connect("postgresql://yang_ou_postgres_user:Lmfaixi91SgYxM5XesWl5lEz91RJ2mNx@dpg-d78okfia214c73acrhgg-a/yang_ou_postgres")
     cur = conn.cursor()
     cur.execute('''
-    INSERT INTO Basketball (First, Last, City, Name, Number) 
+    INSERT INTO Basketball (First, Last, City, Name, Number)
     Values
-    ('Jayson', 'Tatum', "Boston', 'Celtics', 0),
+    ('Jayson', 'Tatum', 'Boston', 'Celtics', 0),
     ('Stephen', 'Curry', 'San Francisco', 'Warriors', 30),
     ('Nikola', 'Jokic', 'Denver', 'Nuggets', 15),
     ('Kawhi', 'Leonard', 'Los Angeles', 'Clippers', 2);
     ''')
     conn.commit()
     conn.close()
-    return "Basketball Table Populated"
+    return "Basketball Table Successfully Populated"
