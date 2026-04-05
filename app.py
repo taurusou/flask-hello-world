@@ -42,5 +42,5 @@ def inserting():
     ('Kawhi', 'Leonard', 'Los Angeles', 'Clippers', 2);
     ''')
     conn.commit()
-    con.close()
+    conn.close()
     return "Basketball Table Populated"
